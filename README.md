@@ -1,2 +1,2 @@
-# text-viewer-vala
-A simple text viewer written in Vala.
+# Text Viewer
+A simple text viewer written in Vala and GTK.
