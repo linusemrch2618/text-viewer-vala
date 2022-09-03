@@ -1,0 +1,7 @@
+data/org.linusemrch2618.TextViewer.desktop.in
+data/org.linusemrch2618.TextViewer.appdata.xml.in
+data/org.linusemrch2618.TextViewer.gschema.xml
+src/window.ui
+src/main.vala
+src/window.vala
+
