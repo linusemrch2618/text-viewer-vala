@@ -19,7 +19,7 @@
 namespace TextViewer {
     public class Application : Adw.Application {
         public Application () {
-            Object (application_id: "org.linusemrch2618.TextViewer", flags: ApplicationFlags.FLAGS_NONE);
+            Object (application_id: "com.linusemrch2618.TextViewer", flags: ApplicationFlags.FLAGS_NONE);
         }
 
         construct {
@@ -46,9 +46,15 @@ namespace TextViewer {
         private void on_about_action () {
             string[] authors = { "Linus Emmerich" };
             Gtk.show_about_dialog (this.active_window,
-                                   "program-name", "text-viewer",
+                                   "logo-icon-name", "com.linusemrch2618.TextViewer",
+                                   "program-name", "Text Viewer",
                                    "authors", authors,
-                                   "version", "0.1.0");
+                                   "version", Config.VERSION,
+                                   "comments", "A simple Text Editor",
+                                   "website", Config.PACKAGE_URL,
+                                   "copyright", "\xc2\xa9 2022 Linus Emmerich",
+                                   "license-type", Gtk.License.GPL_3_0,
+                                   "wrap-license", true);
         }
 
         private void on_preferences_action () {

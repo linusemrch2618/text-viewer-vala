@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <gresources>
-  <gresource prefix="/org/linusemrch2618/TextViewer">
-    <file>window.ui</file>
-    <file>gtk/help-overlay.ui</file>
+  <gresource prefix="/com/linusemrch2618/TextViewer">
+    <file>ui/window.ui</file>
+    <file>ui/help-overlay.ui</file>
   </gresource>
 </gresources>

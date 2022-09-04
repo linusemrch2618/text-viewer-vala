@@ -1,4 +1,4 @@
-application_id = 'org.linusemrch2618.TextViewer'
+application_id = 'com.linusemrch2618.TextViewer'
 
 scalable_dir = join_paths('hicolor', 'scalable', 'apps')
 install_data(

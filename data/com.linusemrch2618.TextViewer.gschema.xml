@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <schemalist gettext-domain="text-viewer">
-	<schema id="org.linusemrch2618.TextViewer" path="/org/linusemrch2618/TextViewer/">
+	<schema id="com.linusemrch2618.TextViewer" path="/com/linusemrch2618/TextViewer/">
     <key name="window-width" type="i">
       <default>600</default>
     </key>

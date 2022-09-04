@@ -1,6 +1,6 @@
 desktop_file = i18n.merge_file(
-  input: 'org.linusemrch2618.TextViewer.desktop.in',
-  output: 'org.linusemrch2618.TextViewer.desktop',
+  input: 'com.linusemrch2618.TextViewer.desktop.in',
+  output: 'com.linusemrch2618.TextViewer.desktop',
   type: 'desktop',
   po_dir: '../po',
   install: true,
@@ -15,8 +15,8 @@ if desktop_utils.found()
 endif
 
 appstream_file = i18n.merge_file(
-  input: 'org.linusemrch2618.TextViewer.appdata.xml.in',
-  output: 'org.linusemrch2618.TextViewer.appdata.xml',
+  input: 'com.linusemrch2618.TextViewer.appdata.xml.in',
+  output: 'com.linusemrch2618.TextViewer.appdata.xml',
   po_dir: '../po',
   install: true,
   install_dir: join_paths(get_option('datadir'), 'appdata')
@@ -29,7 +29,7 @@ if appstream_util.found()
   )
 endif
 
-install_data('org.linusemrch2618.TextViewer.gschema.xml',
+install_data('com.linusemrch2618.TextViewer.gschema.xml',
   install_dir: join_paths(get_option('datadir'), 'glib-2.0/schemas')
 )
 

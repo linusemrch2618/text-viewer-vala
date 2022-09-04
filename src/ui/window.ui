@@ -8,20 +8,24 @@
     <style>
       <class name="devel" />
     </style>
+    
     <child type="titlebar">
       <object class="GtkHeaderBar" id="header_bar">
+        
         <child type="start">
           <object class="GtkButton" id="open_button">
             <property name="label">Open</property>
             <property name="action-name">win.open</property>
           </object>
         </child>
+        
         <child type="end">
           <object class="GtkMenuButton">
             <property name="icon-name">open-menu-symbolic</property>
             <property name="menu-model">primary_menu</property>
           </object>
         </child>
+        
         <child type="end">
           <object class="GtkLabel" id="cursor_pos">
             <property name="label">Ln 0, Col 0</property>
@@ -33,8 +37,10 @@
         </child>
       </object>
     </child>
+    
     <child>
       <object class="AdwToastOverlay" id="toast_overlay">
+        
         <child>
           <object class="GtkScrolledWindow">
             <property name="hexpand">true</property>
@@ -43,6 +49,7 @@
             <property name="margin-bottom">6</property>
             <property name="margin-start">6</property>
             <property name="margin-end">6</property>
+            
             <child>
               <object class="GtkTextView" id="main_text_view">
                 <property name="monospace">true</property>

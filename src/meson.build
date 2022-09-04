@@ -1,7 +1,8 @@
 text_viewer_sources = [
+  'application.vala',
+  'config.vapi',
   'main.vala',
   'window.vala',
-  'application.vala',
 ]
 
 text_viewer_deps = [
@@ -16,6 +17,6 @@ text_viewer_sources += gnome.compile_resources('text_viewer-resources',
 )
 
 executable('text-viewer', text_viewer_sources,
-  vala_args: '--target-glib=2.50',  dependencies: text_viewer_deps,
-  install: true,
+  include_directories: config_h_dir, vala_args: '--target-glib=2.50',
+  dependencies: text_viewer_deps, install: true,
 )

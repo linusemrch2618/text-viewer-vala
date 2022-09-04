@@ -1,7 +1,7 @@
 [Desktop Entry]
-Name=text-viewer
+Name=Text Viewer
 Exec=text-viewer
-Icon=org.linusemrch2618.TextViewer
+Icon=com.linusemrch2618.TextViewer
 Terminal=false
 Type=Application
 Categories=GTK;

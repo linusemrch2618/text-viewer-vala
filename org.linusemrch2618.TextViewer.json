@@ -1,5 +1,5 @@
 {
-    "app-id" : "org.linusemrch2618.TextViewer",
+    "app-id" : "com.linusemrch2618.TextViewer",
     "runtime" : "org.gnome.Platform",
     "runtime-version" : "42",
     "sdk" : "org.gnome.Sdk",
@@ -31,7 +31,7 @@
             "sources" : [
                 {
                     "type" : "git",
-                    "url" : "https://github.com/linusemrch2618/text-viewer-vala"
+                    "url" : "https://github.com/linusemrch2618/text-viewer-vala.git"
                 }
             ]
         }
