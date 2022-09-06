@@ -1,6 +1,6 @@
 project('text-viewer', ['c', 'vala'],
           version: '0.1.0',
-          license: 'LGPLv2+',
+          license: 'GPLv3+',
     meson_version: '>= 0.59.0',
   default_options: [ 'warning_level=2',
                      'werror=false',

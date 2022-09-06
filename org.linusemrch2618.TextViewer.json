@@ -28,6 +28,11 @@
             "name" : "text-viewer",
             "builddir" : true,
             "buildsystem" : "meson",
+            "config-opts": [
+                "-Dflatpak=true",
+                "-Ddistributor_name=text-viewer",
+                "-Ddistributor_version=main"
+            ],
             "sources" : [
                 {
                     "type" : "git",

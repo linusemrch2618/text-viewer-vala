@@ -2,6 +2,6 @@
 <gresources>
   <gresource prefix="/com/linusemrch2618/TextViewer">
     <file>ui/window.ui</file>
-    <file>ui/help-overlay.ui</file>
+    <file alias="gtk/help-overlay.ui">ui/help-overlay.ui</file>
   </gresource>
 </gresources>
