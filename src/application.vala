@@ -14,6 +14,8 @@
  *
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ *
+ * SPDX-License-Identifier: GPL-3.0-or-later
  */
 
 namespace TextViewer {
@@ -44,17 +46,21 @@ namespace TextViewer {
         }
 
         private void on_about_action () {
-            string[] authors = { "Linus Emmerich" };
-            Gtk.show_about_dialog (this.active_window,
-                                   "logo-icon-name", "com.linusemrch2618.TextViewer",
-                                   "program-name", "Text Viewer",
-                                   "authors", authors,
-                                   "version", Config.VERSION,
-                                   "comments", "A simple Text Editor",
-                                   "website", Config.PACKAGE_URL,
-                                   "copyright", "\xc2\xa9 2022 Linus Emmerich",
-                                   "license-type", Gtk.License.GPL_3_0,
-                                   "wrap-license", true);
+            string[] developers = { "Linus Emmerich" };
+            var about = new Adw.AboutWindow () {
+                transient_for = this.active_window,
+                application_name = " Text Viewer",
+                application_icon = "com.linusemrch2618.TextViewer",
+                developer_name = "Linus Emmerich",
+                developers = developers,
+                copyright = "© 2022 Linus Emmerich",
+                version =  Config.VERSION,
+                comments = "A simple Text Editor",
+                website = Config.PACKAGE_URL,
+                license_type = Gtk.License.GPL_3_0,
+            };
+
+            about.present ();
         }
 
         private void on_preferences_action () {

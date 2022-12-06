@@ -6,10 +6,9 @@ text_viewer_sources = [
 ]
 
 text_viewer_deps = [
-  dependency('libadwaita-1', version: '>= 1.0'),
+  dependency('gtk4'),
+  dependency('libadwaita-1'),
 ]
-
-gnome = import('gnome')
 
 text_viewer_sources += gnome.compile_resources('text_viewer-resources',
   'text_viewer.gresource.xml',

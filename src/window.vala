@@ -18,7 +18,7 @@
 
 namespace TextViewer {
     [GtkTemplate (ui = "/com/linusemrch2618/TextViewer/ui/window.ui")]
-    public class Window : Gtk.ApplicationWindow {
+    public class Window : Adw.ApplicationWindow {
 
 
         private Settings settings = new Settings ("com.linusemrch2618.TextViewer");
